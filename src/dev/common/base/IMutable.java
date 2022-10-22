@@ -2,14 +2,18 @@ package dev.common.base;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.2
  * @apiNote Not specified
  * @since 1.0.0
  */
 public interface IMutable {
 
-    default boolean mutable() {
-        return true;
-    }
+    /**
+     * @return Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.0
+     */
+    boolean mutable();
 
 }

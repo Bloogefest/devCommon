@@ -5,7 +5,7 @@ import dev.common.validation.Validator;
 
 /**
  * @author Bloogefest
- * @version 1.2
+ * @version 1.3
  * @apiNote Not specified
  * @since 1.0.0
  */
@@ -129,8 +129,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -141,8 +141,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -153,8 +153,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -165,8 +165,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -177,8 +177,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -189,8 +189,8 @@ public final class Objects {
     }
 
     /**
-     * @param object  Not specified
-     * @param _object Not specified
+     * @param value  Not specified
+     * @param _value Not specified
      * @return Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -916,32 +916,8 @@ public final class Objects {
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static boolean notMutable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof IMutable mutable && !mutable.mutable());
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
     public static boolean immutable(final Object object) throws NullException {
         return Validator.notNull(object, "object") instanceof IMutable mutable && !mutable.mutable();
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean notImmutable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof IMutable mutable) || mutable.mutable();
     }
 
     /**

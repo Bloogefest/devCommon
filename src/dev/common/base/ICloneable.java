@@ -2,12 +2,19 @@ package dev.common.base;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.0.0
  */
 public interface ICloneable<T> {
 
+    /**
+     * @return Not specified
+     * @throws CloneException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.0
+     */
     T clone() throws CloneException;
 
 }
