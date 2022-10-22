@@ -2,13 +2,13 @@ package dev.common.base;
 
 /**
  * @author Bloogefest
- * @version 1.1
+ * @version 1.0
  * @apiNote Not specified
  * @since 1.0.0
  */
-public final class Arrays {
+public final class Strings {
 
-    private Arrays() throws CreationError {
+    private Strings() throws CreationError {
         throw new CreationError();
     }
 
