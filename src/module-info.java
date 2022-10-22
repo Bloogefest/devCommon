@@ -3,6 +3,7 @@
  * @since 1.0.0
  */
 module devCommon {
+    requires devDocs;
 
     exports dev.common.base;
     exports dev.common.error;

@@ -1,11 +1,17 @@
 package dev.common.base;
 
+import dev.docs.*;
+
 /**
  * @author Bloogefest
- * @version 1.1
+ * @version 1.2
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Author("Bloogefest")
+@Version("1.2")
+@ApiNote
+@Since("1.0.0")
 public interface ICancelable {
 
     /**
@@ -14,6 +20,10 @@ public interface ICancelable {
      * @apiNote Not specified
      * @since 1.0.0
      */
+    @Throws(@ThrowsElement(CancelException.class))
+    @Author("Bloogefest")
+    @ApiNote
+    @Since("1.0.0")
     void cancel() throws CancelException;
 
     /**
@@ -22,6 +32,10 @@ public interface ICancelable {
      * @apiNote Not specified
      * @since 1.0.0
      */
+    @Return(boolean.class)
+    @Author("Bloogefest")
+    @ApiNote
+    @Since("1.0.0")
     boolean canceled();
 
 }
