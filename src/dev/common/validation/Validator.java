@@ -5,17 +5,26 @@ import dev.common.base.Objects;
 
 /**
  * @author Bloogefest
- * @version 1.1
- * @apiNote NotCreationErrord
+ * @version 1.2
+ * @apiNote Not specified
  * @since 1.0.0
  */
 public final class Validator {
 
+    /**
+     * @throws CreationError Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.0
+     */
     private Validator() throws CreationError {
         throw new CreationError();
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -28,6 +37,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param name   Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -40,6 +53,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -52,6 +69,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -64,6 +85,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -76,6 +102,13 @@ public final class Validator {
     }
 
     /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotNullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -88,6 +121,9 @@ public final class Validator {
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -100,6 +136,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param name   Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -112,6 +152,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -124,6 +168,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -136,6 +184,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -148,6 +201,13 @@ public final class Validator {
     }
 
     /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -160,6 +220,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -172,6 +235,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -184,6 +250,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -196,6 +265,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -208,18 +280,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equals(final long value, final long _value, final float max) throws NotEqualException {
+    public static long equals(final long value, final long _value) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException("The value must be equal to the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -232,6 +310,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -244,6 +325,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -256,6 +341,11 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -268,6 +358,11 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -280,6 +375,11 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -292,6 +392,11 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -304,18 +409,28 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equals(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws NotEqualException {
+    public static long equals(final long value, final long _value, final String name, final String _name, final String __name) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException("The " + name + " must be equal to the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -328,6 +443,11 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -340,6 +460,12 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param name    Not specified
+     * @param _name   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -352,6 +478,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -364,6 +494,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -376,6 +510,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -388,6 +526,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -400,18 +542,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equalsX(final long value, final long _value, final float max, final String message) throws NotEqualException {
+    public static long equalsX(final long value, final long _value, final String message) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -424,6 +574,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -436,6 +590,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -448,6 +607,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -460,6 +623,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -472,6 +639,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -484,6 +655,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -496,18 +671,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equalsX(final long value, final long _value, final float max, final Throwable cause) throws NotEqualException {
+    public static long equalsX(final long value, final long _value, final Throwable cause) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -520,6 +703,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -532,6 +719,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -544,6 +736,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -556,6 +753,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -568,6 +770,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -580,6 +787,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -592,18 +804,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equalsX(final long value, final long _value, final float max, final String message, final Throwable cause) throws NotEqualException {
+    public static long equalsX(final long value, final long _value, final String message, final Throwable cause) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -616,6 +838,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -628,6 +855,12 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -640,6 +873,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -652,6 +892,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -664,6 +911,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -676,6 +930,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -688,18 +949,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long equalsX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotEqualException {
+    public static long equalsX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotEqualException {
         if (Objects.notEquals(value, _value))
             throw new NotEqualException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -712,6 +987,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -724,6 +1006,14 @@ public final class Validator {
     }
 
     /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param _object    Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotEqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -736,6 +1026,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -748,6 +1041,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -760,6 +1056,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -772,6 +1071,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -784,18 +1086,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEquals(final long value, final long _value, final float max) throws EqualException {
+    public static long notEquals(final long value, final long _value) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException("The value must not be equal to the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -808,6 +1116,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -820,6 +1131,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -832,6 +1147,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -844,6 +1162,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -856,6 +1177,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -868,6 +1192,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -880,18 +1207,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEquals(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws EqualException {
+    public static long notEquals(final long value, final long _value, final String name, final String _name, final String __name) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException("The " + name + " must not be equal to the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -904,6 +1237,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -916,6 +1252,10 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -928,6 +1268,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -940,6 +1284,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -952,6 +1300,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -964,6 +1316,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -976,18 +1332,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEqualsX(final long value, final long _value, final float max, final String message) throws EqualException {
+    public static long notEqualsX(final long value, final long _value, final String message) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1000,6 +1364,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1012,6 +1380,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1024,6 +1397,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1036,6 +1413,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1048,6 +1429,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1060,6 +1445,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1072,18 +1461,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEqualsX(final long value, final long _value, final float max, final Throwable cause) throws EqualException {
+    public static long notEqualsX(final long value, final long _value, final Throwable cause) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1096,6 +1493,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1108,6 +1509,11 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1120,6 +1526,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1132,6 +1543,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1144,6 +1560,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1156,6 +1577,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1168,18 +1594,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEqualsX(final long value, final long _value, final float max, final String message, final Throwable cause) throws EqualException {
+    public static long notEqualsX(final long value, final long _value, final String message, final Throwable cause) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1192,6 +1628,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1204,6 +1645,12 @@ public final class Validator {
     }
 
     /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param _object Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1216,6 +1663,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1228,6 +1682,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1240,6 +1701,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1252,6 +1720,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1264,18 +1739,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notEqualsX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws EqualException {
+    public static long notEqualsX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws EqualException {
         if (Objects.equals(value, _value))
             throw new EqualException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1288,6 +1777,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1300,6 +1796,14 @@ public final class Validator {
     }
 
     /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param _object    Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws EqualException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1312,6 +1816,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1324,6 +1831,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1336,6 +1846,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1348,18 +1861,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long more(final long value, final long _value, final float max) throws NotMoreException {
+    public static long more(final long value, final long _value) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException("The value must be more than the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1372,6 +1891,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1384,6 +1906,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1396,6 +1921,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1408,6 +1936,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1420,18 +1951,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long more(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws NotMoreException {
+    public static long more(final long value, final long _value, final String name, final String _name, final String __name) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException("The " + name + " must be more than the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1444,6 +1981,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1456,6 +1996,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1468,6 +2012,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1480,6 +2028,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1492,18 +2044,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long moreX(final long value, final long _value, final float max, final String message) throws NotMoreException {
+    public static long moreX(final long value, final long _value, final String message) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1516,6 +2076,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1528,6 +2092,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1540,6 +2108,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1552,6 +2124,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1564,18 +2140,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long moreX(final long value, final long _value, final float max, final Throwable cause) throws NotMoreException {
+    public static long moreX(final long value, final long _value, final Throwable cause) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1588,6 +2172,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1600,6 +2188,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1612,6 +2205,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1624,6 +2222,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1636,18 +2239,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long moreX(final long value, final long _value, final float max, final String message, final Throwable cause) throws NotMoreException {
+    public static long moreX(final long value, final long _value, final String message, final Throwable cause) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1660,6 +2273,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1672,6 +2290,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1684,6 +2309,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1696,6 +2328,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1708,18 +2347,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long moreX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotMoreException {
+    public static long moreX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotMoreException {
         if (Objects.notMore(value, _value))
             throw new NotMoreException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1732,6 +2385,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotMoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1744,6 +2404,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1756,6 +2419,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1768,6 +2434,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1780,18 +2449,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMore(final long value, final long _value, final float max) throws MoreException {
+    public static long notMore(final long value, final long _value) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException("The value must not be more than the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1804,6 +2479,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1816,6 +2494,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1828,6 +2509,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1840,6 +2524,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1852,18 +2539,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMore(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws MoreException {
+    public static long notMore(final long value, final long _value, final String name, final String _name, final String __name) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException("The " + name + " must not be more than the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1876,6 +2569,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1888,6 +2584,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1900,6 +2600,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1912,6 +2616,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1924,18 +2632,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMoreX(final long value, final long _value, final float max, final String message) throws MoreException {
+    public static long notMoreX(final long value, final long _value, final String message) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1948,6 +2664,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1960,6 +2680,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1972,6 +2696,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1984,6 +2712,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -1996,18 +2728,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMoreX(final long value, final long _value, final float max, final Throwable cause) throws MoreException {
+    public static long notMoreX(final long value, final long _value, final Throwable cause) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2020,6 +2760,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2032,6 +2776,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2044,6 +2793,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2056,6 +2810,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2068,18 +2827,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMoreX(final long value, final long _value, final float max, final String message, final Throwable cause) throws MoreException {
+    public static long notMoreX(final long value, final long _value, final String message, final Throwable cause) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2092,6 +2861,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2104,6 +2878,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2116,6 +2897,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2128,6 +2916,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2140,18 +2935,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notMoreX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws MoreException {
+    public static long notMoreX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws MoreException {
         if (Objects.more(value, _value))
             throw new MoreException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2164,6 +2973,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws MoreException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2176,6 +2992,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2188,6 +3007,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2200,6 +3022,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2212,18 +3037,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long less(final long value, final long _value, final float max) throws NotLessException {
+    public static long less(final long value, final long _value) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException("The value must be less than the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2236,6 +3067,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2248,6 +3082,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2260,6 +3097,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2272,6 +3112,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2284,18 +3127,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long less(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws NotLessException {
+    public static long less(final long value, final long _value, final String name, final String _name, final String __name) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException("The " + name + " must be less than the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2308,6 +3157,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2320,6 +3172,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2332,6 +3188,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2344,6 +3204,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2356,18 +3220,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long lessX(final long value, final long _value, final float max, final String message) throws NotLessException {
+    public static long lessX(final long value, final long _value, final String message) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2380,6 +3252,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2392,6 +3268,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2404,6 +3284,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2416,6 +3300,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2428,18 +3316,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long lessX(final long value, final long _value, final float max, final Throwable cause) throws NotLessException {
+    public static long lessX(final long value, final long _value, final Throwable cause) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2452,6 +3348,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2464,6 +3364,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2476,6 +3381,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2488,6 +3398,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2500,18 +3415,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long lessX(final long value, final long _value, final float max, final String message, final Throwable cause) throws NotLessException {
+    public static long lessX(final long value, final long _value, final String message, final Throwable cause) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2524,6 +3449,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2536,6 +3466,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2548,6 +3485,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2560,6 +3504,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2572,18 +3523,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long lessX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotLessException {
+    public static long lessX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotLessException {
         if (Objects.notLess(value, _value))
             throw new NotLessException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2596,6 +3561,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotLessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2608,6 +3580,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2620,6 +3595,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2632,6 +3610,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2644,18 +3625,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLess(final long value, final long _value, final float max) throws LessException {
+    public static long notLess(final long value, final long _value) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException("The value must not be less than the _value");
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2668,6 +3655,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2680,6 +3670,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2692,6 +3685,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2704,6 +3700,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2716,18 +3715,24 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLess(final long value, final long _value, final float max, final String name, final String _name, final String __name) throws LessException {
+    public static long notLess(final long value, final long _value, final String name, final String _name, final String __name) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException("The " + name + " must not be less than the " + _name);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2740,6 +3745,9 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2752,6 +3760,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2764,6 +3776,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2776,6 +3792,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2788,18 +3808,26 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLessX(final long value, final long _value, final float max, final String message) throws LessException {
+    public static long notLessX(final long value, final long _value, final String message) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException(message);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2812,6 +3840,10 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2824,6 +3856,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2836,6 +3872,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2848,6 +3888,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2860,18 +3904,26 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLessX(final long value, final long _value, final float max, final Throwable cause) throws LessException {
+    public static long notLessX(final long value, final long _value, final Throwable cause) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException(cause);
         return value;
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2884,6 +3936,10 @@ public final class Validator {
     }
 
     /**
+     * @param value  Not specified
+     * @param _value Not specified
+     * @param cause  Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2896,6 +3952,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2908,6 +3969,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2920,6 +3986,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2932,18 +4003,28 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLessX(final long value, final long _value, final float max, final String message, final Throwable cause) throws LessException {
+    public static long notLessX(final long value, final long _value, final String message, final Throwable cause) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException(message, cause);
         return value;
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2956,6 +4037,11 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param _value  Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2968,6 +4054,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2980,6 +4073,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -2992,6 +4092,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3004,18 +4111,32 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.1
      */
-    public static long notLessX(final long value, final long _value, final float max, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws LessException {
+    public static long notLessX(final long value, final long _value, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws LessException {
         if (Objects.less(value, _value))
             throw new LessException(message, cause, suppressed, writable);
         return value;
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3028,6 +4149,13 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param _value     Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws LessException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3040,6 +4168,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3052,6 +4184,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3064,6 +4200,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3076,6 +4216,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3088,6 +4232,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3100,6 +4248,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3112,6 +4264,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3124,6 +4280,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3136,6 +4296,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3148,6 +4312,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3160,6 +4328,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3172,6 +4344,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3184,6 +4360,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3196,6 +4376,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3208,6 +4392,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3220,6 +4408,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3232,6 +4424,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3244,6 +4440,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3256,6 +4456,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3268,6 +4472,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3280,6 +4488,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3292,6 +4504,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3304,6 +4520,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3316,6 +4536,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3328,6 +4552,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3340,6 +4570,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3352,6 +4588,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3364,6 +4606,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3376,6 +4624,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3388,6 +4642,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3400,6 +4660,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3412,6 +4680,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3424,6 +4700,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3436,6 +4720,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3448,6 +4740,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3460,6 +4760,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotInException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3472,6 +4780,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3484,6 +4796,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3496,6 +4812,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3508,6 +4828,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3520,6 +4844,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3532,6 +4860,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3544,6 +4876,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3556,6 +4892,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3568,6 +4908,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3580,6 +4924,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3592,6 +4940,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3604,6 +4956,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3616,6 +4972,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3628,6 +4988,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3640,6 +5004,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3652,6 +5020,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3664,6 +5036,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3676,6 +5052,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3688,6 +5068,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3700,6 +5084,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3712,6 +5100,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3724,6 +5116,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3736,6 +5132,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3748,6 +5148,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3760,6 +5164,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3772,6 +5182,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3784,6 +5200,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3796,6 +5218,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3808,6 +5236,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3820,6 +5254,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3832,6 +5272,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3844,6 +5292,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3856,6 +5312,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3868,6 +5332,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3880,6 +5352,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3892,6 +5372,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws InException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3904,6 +5392,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3916,6 +5408,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3928,6 +5424,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3940,6 +5440,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3952,6 +5456,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3964,6 +5472,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3976,6 +5488,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -3988,6 +5504,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4000,6 +5520,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4012,6 +5536,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4024,6 +5552,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4036,6 +5568,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4048,6 +5584,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4060,6 +5600,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4072,6 +5616,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4084,6 +5632,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4096,6 +5648,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4108,6 +5664,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4120,6 +5680,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4132,6 +5696,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4144,6 +5712,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4156,6 +5728,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4168,6 +5744,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4180,6 +5760,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4192,6 +5776,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4204,6 +5794,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4216,6 +5812,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4228,6 +5830,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4240,6 +5848,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4252,6 +5866,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4264,6 +5884,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4276,6 +5904,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4288,6 +5924,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4300,6 +5944,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4312,6 +5964,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4324,6 +5984,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws NotOutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4336,6 +6004,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4348,6 +6020,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4360,6 +6036,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4372,6 +6052,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4384,6 +6068,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4396,6 +6084,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4408,6 +6100,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4420,6 +6116,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4432,6 +6132,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4444,6 +6148,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4456,6 +6164,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4468,6 +6180,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4480,6 +6196,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4492,6 +6212,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4504,6 +6228,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4516,6 +6244,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4528,6 +6260,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4540,6 +6276,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4552,6 +6292,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4564,6 +6308,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4576,6 +6324,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4588,6 +6340,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4600,6 +6356,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4612,6 +6372,10 @@ public final class Validator {
     }
 
     /**
+     * @param value Not specified
+     * @param min   Not specified
+     * @param max   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4624,6 +6388,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4636,6 +6406,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4648,6 +6424,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4660,6 +6442,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4672,6 +6460,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4684,6 +6478,12 @@ public final class Validator {
     }
 
     /**
+     * @param value   Not specified
+     * @param min     Not specified
+     * @param max     Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4696,6 +6496,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4708,6 +6516,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4720,6 +6536,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4732,6 +6556,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4744,6 +6576,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4756,6 +6596,14 @@ public final class Validator {
     }
 
     /**
+     * @param value      Not specified
+     * @param min        Not specified
+     * @param max        Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
      * @throws OutException Not specified
      * @author Bloogefest
      * @apiNote Not specified
@@ -4765,6 +6613,618 @@ public final class Validator {
         if (Objects.out(value, min, max))
             throw new OutException(message, cause, suppressed, writable);
         return value;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignable(final T object, final Class<?> type) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignable(final T object, final Class<?> type, final String name, final String _name) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignableX(final T object, final Class<?> type, final String message) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param cause  Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignableX(final T object, final Class<?> type, final Throwable cause) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignableX(final T object, final Class<?> type, final String message, final Throwable cause) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param type       Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T assignableX(final T object, final Class<?> type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotAssignableException {
+        return object;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignable(final Class<T> type, final Class<?> _type) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException("The " + _type.getName() + " must not be assignable from the " + type.getName());
+        return type;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @param name  Not specified
+     * @param _name Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignable(final Class<T> type, final Class<?> _type, final String name, final String _name) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException("The " + _name + " must not be assignable from the " + name);
+        return type;
+    }
+
+    /**
+     * @param type    Not specified
+     * @param _type   Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignableX(final Class<T> type, final Class<?> _type, final String message) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException(message);
+        return type;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @param cause Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignableX(final Class<T> type, final Class<?> _type, final Throwable cause) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException(cause);
+        return type;
+    }
+
+    /**
+     * @param type    Not specified
+     * @param _type   Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignableX(final Class<T> type, final Class<?> _type, final String message, final Throwable cause) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException(message, cause);
+        return type;
+    }
+
+    /**
+     * @param type       Not specified
+     * @param _type      Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws NotAssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> assignableX(final Class<T> type, final Class<?> _type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotAssignableException {
+        if (Objects.notAssignable(type, _type))
+            throw new NotAssignableException(message, cause, suppressed, writable);
+        return type;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignable(final T object, final Class<?> type) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException("The " + type.getName() + " must not be assignable from the " + object.getClass().getName());
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignable(final T object, final Class<?> type, final String name, final String _name) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException("The " + _name + " must not be assignable from the " + name);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignableX(final T object, final Class<?> type, final String message) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException(message);
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param cause  Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignableX(final T object, final Class<?> type, final Throwable cause) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException(cause);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignableX(final T object, final Class<?> type, final String message, final Throwable cause) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException(message, cause);
+        return object;
+    }
+
+    /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param type       Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notAssignableX(final T object, final Class<?> type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws AssignableException {
+        if (Objects.assignable(object, type))
+            throw new AssignableException(message, cause, suppressed, writable);
+        return object;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignable(final Class<T> type, final Class<?> _type) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException("The " + _type.getName() + " must not be assignable from the " + type.getName());
+        return type;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @param name  Not specified
+     * @param _name Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignable(final Class<T> type, final Class<?> _type, final String name, final String _name) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException("The " + _name + " must not be assignable from the " + name);
+        return type;
+    }
+
+    /**
+     * @param type    Not specified
+     * @param _type   Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignableX(final Class<T> type, final Class<?> _type, final String message) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException(message);
+        return type;
+    }
+
+    /**
+     * @param type  Not specified
+     * @param _type Not specified
+     * @param cause Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignableX(final Class<T> type, final Class<?> _type, final Throwable cause) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException(cause);
+        return type;
+    }
+
+    /**
+     * @param type    Not specified
+     * @param _type   Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignableX(final Class<T> type, final Class<?> _type, final String message, final Throwable cause) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException(message, cause);
+        return type;
+    }
+
+    /**
+     * @param type       Not specified
+     * @param _type      Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws AssignableException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> Class<T> notAssignableX(final Class<T> type, final Class<?> _type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws AssignableException {
+        if (Objects.assignable(type, _type))
+            throw new AssignableException(message, cause, suppressed, writable);
+        return type;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instance(final T object, final Class<?> type) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new InstanceException("The object must be instance of the " + type.getName());
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instance(final T object, final Class<?> type, final String name, final String _name) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new InstanceException("The " + name + " must be instance of the " + _name);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instanceX(final T object, final Class<?> type, final String message) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new NotInstanceException(message);
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param cause  Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instanceX(final T object, final Class<?> type, final Throwable cause) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new NotInstanceException(cause);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instanceX(final T object, final Class<?> type, final String message, final Throwable cause) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new NotInstanceException(message, cause);
+        return object;
+    }
+
+    /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param type       Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws NotInstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T instanceX(final T object, final Class<?> type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws NotInstanceException {
+        if (Objects.notInstance(object, type))
+            throw new NotInstanceException(message, cause, suppressed, writable);
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstance(final T object, final Class<?> type) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException("The object must not be instance of the " + type.getName());
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param name   Not specified
+     * @param _name  Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstance(final T object, final Class<?> type, final String name, final String _name) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException("The " + name + " must not be instance of the " + _name);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstanceX(final T object, final Class<?> type, final String message) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException(message);
+        return object;
+    }
+
+    /**
+     * @param <T>    Not specified
+     * @param object Not specified
+     * @param type   Not specified
+     * @param cause  Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstanceX(final T object, final Class<?> type, final Throwable cause) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException(cause);
+        return object;
+    }
+
+    /**
+     * @param <T>     Not specified
+     * @param object  Not specified
+     * @param type    Not specified
+     * @param message Not specified
+     * @param cause   Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstanceX(final T object, final Class<?> type, final String message, final Throwable cause) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException(message, cause);
+        return object;
+    }
+
+    /**
+     * @param <T>        Not specified
+     * @param object     Not specified
+     * @param type       Not specified
+     * @param message    Not specified
+     * @param cause      Not specified
+     * @param suppressed Not specified
+     * @param writable   Not specified
+     * @return Not specified
+     * @throws InstanceException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.0.2
+     */
+    public static <T> T notInstanceX(final T object, final Class<?> type, final String message, final Throwable cause, final boolean suppressed, final boolean writable) throws InstanceException {
+        if (Objects.instance(object, type))
+            throw new InstanceException(message, cause, suppressed, writable);
+        return object;
     }
 
 }

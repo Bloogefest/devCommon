@@ -1,0 +1,27 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <JavaCodeStyleSettings>
+      <option name="GENERATE_FINAL_LOCALS" value="true" />
+      <option name="GENERATE_FINAL_PARAMETERS" value="true" />
+      <option name="MULTI_CATCH_TYPES_WRAP" value="2" />
+    </JavaCodeStyleSettings>
+    <codeStyleSettings language="JAVA">
+      <option name="BLANK_LINES_AROUND_FIELD" value="1" />
+      <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+      <option name="BLANK_LINES_BEFORE_CLASS_END" value="1" />
+      <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
+      <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+      <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+      <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+      <option name="PREFER_PARAMETERS_WRAP" value="true" />
+      <option name="METHOD_PARAMETERS_WRAP" value="2" />
+      <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
+      <option name="TERNARY_OPERATION_WRAP" value="2" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_LAMBDAS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
+      <option name="ARRAY_INITIALIZER_WRAP" value="1" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
