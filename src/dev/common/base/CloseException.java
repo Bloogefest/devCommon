@@ -1,21 +1,13 @@
 package dev.common.base;
 
 import dev.common.exception.SoftException;
-import dev.docs.ApiNote;
-import dev.docs.Author;
-import dev.docs.Since;
-import dev.docs.Version;
 
 /**
  * @author Bloogefest
- * @version 1.1
+ * @version 1.3
  * @apiNote Not specified
  * @since 1.0.0
  */
-@Author("Bloogefest")
-@Version("1.1")
-@ApiNote
-@Since("1.0.0")
 public class CloseException extends SoftException {
 
     public CloseException() {
