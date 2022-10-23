@@ -5,7 +5,7 @@ import dev.common.function.IMutableAccessor;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.1.0
  */
@@ -41,6 +41,17 @@ public interface IMutableLink<T> extends ILink<T>, IMutableAccessor<T> {
     ILink<T> next() throws LinkException;
 
     /**
+     * @param link Not specified
+     * @return Not specified
+     * @throws LinkException Not specified
+     * @throws MutateException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.1.1
+     */
+    ILink<T> next(final ILink<T> link) throws MutateException;
+
+    /**
      * @return Not specified
      * @throws LinkException Not specified
      * @author Bloogefest
@@ -49,6 +60,16 @@ public interface IMutableLink<T> extends ILink<T>, IMutableAccessor<T> {
      */
     @Override
     ILink<T> previous() throws LinkException;
+
+    /**
+     * @return Not specified
+     * @throws LinkException Not specified
+     * @throws MutateException Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.1.1
+     */
+    ILink<T> previous(final ILink<T> link) throws MutateException;
 
     /**
      * @return Not specified
