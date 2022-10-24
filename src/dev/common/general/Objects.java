@@ -1,7 +1,7 @@
 package dev.common.general;
 
 import dev.common.security.SecurityException;
-import dev.common.valid.NullException;
+import dev.common.validation.NullException;
 import dev.common.validation.Validator;
 import org.jetbrains.annotations.Contract;
 
@@ -52,12 +52,13 @@ public final class Objects {
      * @param object The source object
      * @param object_ The subsequent object
      * @return Not specified
+     * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.1.3
      */
     @Contract("!null, !null -> true; null, null -> true; _, _ -> _")
-    public static boolean equals(final Object object, final Object object_) {
+    public static boolean equals(final Object object, final Object object_) throws NullException {
         return object == object_ || notNull(object) && object.equals(object_);
     }
 
@@ -65,12 +66,13 @@ public final class Objects {
      * @param object The source object
      * @param object_ The subsequent object
      * @return Not specified
+     * @throws NullException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.1.3
      */
     @Contract("!null, null -> true; null, !null -> true; _, _ -> _")
-    public static boolean notEquals(final Object object, final Object object_) {
+    public static boolean notEquals(final Object object, final Object object_) throws NullException {
         return object != object_ && !(notNull(object) && object.equals(object_));
     }
 
