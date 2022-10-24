@@ -1,10 +1,10 @@
 package dev.common.base;
 
-import dev.common.error.SoftError;
+import dev.common.exception.SoftError;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.0.0
  */

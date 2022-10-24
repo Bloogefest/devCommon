@@ -2,13 +2,14 @@ package dev.common.exception;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.0.0
  */
 public class SoftException extends RuntimeException {
 
     public SoftException() {
+        super("Not specified");
     }
 
     public SoftException(final String message) {

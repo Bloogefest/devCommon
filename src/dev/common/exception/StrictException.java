@@ -2,13 +2,14 @@ package dev.common.exception;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.0.0
  */
 public class StrictException extends Exception {
 
     public StrictException() {
+        super("Not specified");
     }
 
     public StrictException(final String message) {
