@@ -49,6 +49,19 @@ public final class Objects {
     }
 
     /**
+     * @param value The source value
+     * @param value_ The subsequent value
+     * @return Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.1.3
+     */
+    @Contract("_, _ -> _")
+    public static boolean equals(final boolean value, final boolean value_) {
+        return value == value_;
+    }
+
+    /**
      * @param object The source object
      * @param object_ The subsequent object
      * @return Not specified
@@ -60,6 +73,19 @@ public final class Objects {
     @Contract("!null, !null -> true; null, null -> true; _, _ -> _")
     public static boolean equals(final Object object, final Object object_) throws NullException {
         return object == object_ || notNull(object) && object.equals(object_);
+    }
+
+    /**
+     * @param value The source value
+     * @param value_ The subsequent value
+     * @return Not specified
+     * @author Bloogefest
+     * @apiNote Not specified
+     * @since 1.1.3
+     */
+    @Contract("_, _ -> _")
+    public static boolean notEquals(final boolean value, final boolean value_) {
+        return value != value_;
     }
 
     /**
