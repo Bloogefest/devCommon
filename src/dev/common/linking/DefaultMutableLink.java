@@ -8,7 +8,7 @@ import dev.common.base.Objects;
  * @author Bloogefest
  * @version 1.0
  * @apiNote Not specified
- * @since 1.1.1
+ * @since 1.1.2
  */
 public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLink<T> {
 
@@ -59,6 +59,7 @@ public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLin
      */
     @Override
     public void set(final T value) throws MutateException {
+        if (!mutable()) throw new MutateException();
         this.value = value;
     }
 
@@ -101,7 +102,7 @@ public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLin
     }
 
     /**
-     * @param link
+     * @param link Not specified
      * @return Not specified
      * @throws LinkException   Not specified
      * @throws MutateException Not specified
@@ -146,7 +147,7 @@ public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLin
      */
     @Override
     public boolean mutable() {
-        return false;
+        return super.mutable();
     }
 
 }
