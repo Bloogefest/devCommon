@@ -19,6 +19,7 @@ public final class Objects {
      * @apiNote Not specified
      * @since 1.1.3
      */
+    @Contract("-> fail")
     private Objects() throws SecurityException {
         throw new SecurityException();
     }
