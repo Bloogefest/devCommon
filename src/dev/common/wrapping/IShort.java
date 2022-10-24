@@ -1,9 +1,9 @@
 package dev.common.wrapping;
 
 import dev.common.base.ConvertException;
-import dev.common.base.Objects;
-import dev.common.validation.NullException;
-import dev.common.validation.Validator;
+import dev.common.base.OldObjects;
+import dev.common.valid.NullException;
+import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest
@@ -29,7 +29,7 @@ public interface IShort extends INumber<Short> {
      */
     @Override
     default boolean toBoolean() {
-        return Objects.more(toShort(), IBoolean.SHORT_FALSE);
+        return OldObjects.more(toShort(), IBoolean.SHORT_FALSE);
     }
 
     /**

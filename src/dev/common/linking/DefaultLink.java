@@ -1,6 +1,6 @@
 package dev.common.linking;
 
-import dev.common.base.Objects;
+import dev.common.base.OldObjects;
 
 /**
  * @author Bloogefest
@@ -70,7 +70,7 @@ public class DefaultLink<T> implements ILink<T> {
      */
     @Override
     public boolean hasNext() throws LinkException {
-        return Objects.notNull(next);
+        return OldObjects.notNull(next);
     }
 
     /**
@@ -82,7 +82,7 @@ public class DefaultLink<T> implements ILink<T> {
      */
     @Override
     public boolean hasPrevious() throws LinkException {
-        return Objects.notNull(previous);
+        return OldObjects.notNull(previous);
     }
 
 }

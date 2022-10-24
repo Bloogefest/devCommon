@@ -1,8 +1,5 @@
 package dev.common.base;
 
-import dev.common.validation.LessException;
-import dev.common.validation.Validator;
-
 /**
  * @author Bloogefest
  * @version 1.1
@@ -26,7 +23,7 @@ public interface ISizable {
      * @since 1.0.7
      */
     default boolean empty() {
-        return Objects.notLess(size(), 0);
+        return OldObjects.notLess(size(), 0);
     }
 
 }

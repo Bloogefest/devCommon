@@ -2,7 +2,7 @@ package dev.common.linking;
 
 import dev.common.base.DefaultMutable;
 import dev.common.base.MutateException;
-import dev.common.base.Objects;
+import dev.common.base.OldObjects;
 
 /**
  * @author Bloogefest
@@ -124,7 +124,7 @@ public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLin
      */
     @Override
     public boolean hasNext() throws LinkException {
-        return Objects.notNull(next);
+        return OldObjects.notNull(next);
     }
 
     /**
@@ -136,7 +136,7 @@ public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLin
      */
     @Override
     public boolean hasPrevious() throws LinkException {
-        return Objects.notNull(previous);
+        return OldObjects.notNull(previous);
     }
 
     /**

@@ -1,9 +1,9 @@
 package dev.common.wrapping;
 
 import dev.common.base.ConvertException;
-import dev.common.base.Objects;
-import dev.common.validation.NullException;
-import dev.common.validation.Validator;
+import dev.common.base.OldObjects;
+import dev.common.valid.NullException;
+import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest
@@ -31,7 +31,7 @@ public interface IFloat extends INumber<Float> {
      */
     @Override
     default boolean toBoolean() {
-        return Objects.more(toFloat(), IBoolean.FLOAT_FALSE);
+        return OldObjects.more(toFloat(), IBoolean.FLOAT_FALSE);
     }
 
     /**

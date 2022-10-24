@@ -6,18 +6,18 @@ package dev.common.validation;
  * @apiNote Not specified
  * @since 1.1.3
  */
-public class NullException extends ValidationException {
+public class NotEqualsException extends ValidationException {
 
-    public static final String LAYOUT_MESSAGE = "The %s must not be null";
+    public static final String LAYOUT_MESSAGE = "The %s must be equal to %s";
 
-    public static final String DEFAULT_MESSAGE = "The object must not be null";
+    public static final String DEFAULT_MESSAGE = "The source object must be equal to the subsequent object";
 
     /**
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException() {
+    public NotEqualsException() {
         super(DEFAULT_MESSAGE);
     }
 
@@ -27,7 +27,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final String message) {
+    public NotEqualsException(final String message) {
         super(message);
     }
 
@@ -37,7 +37,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final Throwable cause) {
+    public NotEqualsException(final Throwable cause) {
         super(cause);
     }
 
@@ -48,7 +48,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final String message, final Throwable cause) {
+    public NotEqualsException(final String message, final Throwable cause) {
         super(message, cause);
     }
 
@@ -61,7 +61,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    protected NullException(final String message, final Throwable cause, final boolean suppression, final boolean writable) {
+    protected NotEqualsException(final String message, final Throwable cause, final boolean suppression, final boolean writable) {
         super(message, cause, suppression, writable);
     }
 

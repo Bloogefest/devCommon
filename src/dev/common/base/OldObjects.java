@@ -1,7 +1,7 @@
 package dev.common.base;
 
-import dev.common.validation.NullException;
-import dev.common.validation.Validator;
+import dev.common.valid.NullException;
+import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest
@@ -9,7 +9,8 @@ import dev.common.validation.Validator;
  * @apiNote Not specified
  * @since 1.0.0
  */
-public final class Objects {
+@Deprecated
+public final class OldObjects {
 
     /**
      * @throws CreationError Not specified
@@ -17,7 +18,7 @@ public final class Objects {
      * @apiNote Not specified
      * @since 1.0.0
      */
-    private Objects() throws CreationError {
+    private OldObjects() throws CreationError {
         throw new CreationError();
     }
 

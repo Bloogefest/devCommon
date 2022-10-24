@@ -1,4 +1,6 @@
-package dev.common.validation;
+package dev.common.security;
+
+import dev.common.throwable.SoftException;
 
 /**
  * @author Bloogefest
@@ -6,19 +8,14 @@ package dev.common.validation;
  * @apiNote Not specified
  * @since 1.1.3
  */
-public class NullException extends ValidationException {
-
-    public static final String LAYOUT_MESSAGE = "The %s must not be null";
-
-    public static final String DEFAULT_MESSAGE = "The object must not be null";
+public class SecurityException extends SoftException {
 
     /**
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException() {
-        super(DEFAULT_MESSAGE);
+    public SecurityException() {
     }
 
     /**
@@ -27,7 +24,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final String message) {
+    public SecurityException(final String message) {
         super(message);
     }
 
@@ -37,7 +34,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final Throwable cause) {
+    public SecurityException(final Throwable cause) {
         super(cause);
     }
 
@@ -48,7 +45,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    public NullException(final String message, final Throwable cause) {
+    public SecurityException(final String message, final Throwable cause) {
         super(message, cause);
     }
 
@@ -61,7 +58,7 @@ public class NullException extends ValidationException {
      * @apiNote Not specified
      * @since 1.1.3
      */
-    protected NullException(final String message, final Throwable cause, final boolean suppression, final boolean writable) {
+    protected SecurityException(final String message, final Throwable cause, final boolean suppression, final boolean writable) {
         super(message, cause, suppression, writable);
     }
 

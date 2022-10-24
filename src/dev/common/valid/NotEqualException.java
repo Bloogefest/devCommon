@@ -1,4 +1,4 @@
-package dev.common.validation;
+package dev.common.valid;
 
 /**
  * @author Bloogefest

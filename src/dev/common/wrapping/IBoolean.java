@@ -1,8 +1,8 @@
 package dev.common.wrapping;
 
 import dev.common.base.ConvertException;
-import dev.common.validation.NullException;
-import dev.common.validation.Validator;
+import dev.common.valid.NullException;
+import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest

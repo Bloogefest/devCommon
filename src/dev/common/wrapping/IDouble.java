@@ -1,9 +1,9 @@
 package dev.common.wrapping;
 
 import dev.common.base.ConvertException;
-import dev.common.base.Objects;
-import dev.common.validation.NullException;
-import dev.common.validation.Validator;
+import dev.common.base.OldObjects;
+import dev.common.valid.NullException;
+import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest
@@ -31,7 +31,7 @@ public interface IDouble extends INumber<Double> {
      */
     @Override
     default boolean toBoolean() {
-        return Objects.more(toDouble(), IBoolean.DOUBLE_FALSE);
+        return OldObjects.more(toDouble(), IBoolean.DOUBLE_FALSE);
     }
 
     /**
