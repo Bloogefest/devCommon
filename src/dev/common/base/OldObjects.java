@@ -5,7 +5,7 @@ import dev.common.valid.Validator;
 
 /**
  * @author Bloogefest
- * @version 1.3
+ * @version 1.4
  * @apiNote Not specified
  * @since 1.0.0
  */
@@ -13,13 +13,13 @@ import dev.common.valid.Validator;
 public final class OldObjects {
 
     /**
-     * @throws CreationError Not specified
+     * @throws SecurityException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.0.0
      */
-    private OldObjects() throws CreationError {
-        throw new CreationError();
+    private OldObjects() throws SecurityException {
+        throw new SecurityException();
     }
 
     /**
@@ -799,126 +799,6 @@ public final class OldObjects {
      */
     public static boolean notOut(final double value, final double min, final double max) {
         return value > min && value < max;
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean openable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof IOpenable;
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean notOpenable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof IOpenable);
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean closeable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof ICloseable;
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean notCloseable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof ICloseable);
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean cloneable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof ICloneable<?>;
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean notCloneable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof ICloneable<?>);
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean convertable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof IConvertable<?>;
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean notConvertable(final Object object) throws NullException {
-        return !(Validator.notNull(object, "object") instanceof IConvertable<?>);
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean mutable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof IMutable mutable && mutable.mutable();
-    }
-
-    /**
-     * @param object Not specified
-     * @return Not specified
-     * @throws NullException Not specified
-     * @author Bloogefest
-     * @apiNote Not specified
-     * @since 1.0.1
-     */
-    public static boolean immutable(final Object object) throws NullException {
-        return Validator.notNull(object, "object") instanceof IMutable mutable && !mutable.mutable();
     }
 
     /**
