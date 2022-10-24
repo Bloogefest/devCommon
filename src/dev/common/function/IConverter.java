@@ -8,6 +8,7 @@ package dev.common.function;
  * @apiNote The converter of the source value to the target value
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IConverter<T, S> {
 

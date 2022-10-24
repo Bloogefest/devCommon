@@ -6,6 +6,7 @@ package dev.common.function;
  * @apiNote Does something
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IAction {
 

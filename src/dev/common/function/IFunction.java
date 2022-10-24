@@ -8,6 +8,7 @@ package dev.common.function;
  * @apiNote The function with an argument
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IFunction<T, R> {
 

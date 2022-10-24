@@ -7,6 +7,7 @@ package dev.common.function;
  * @apiNote The filter of the value
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IFilter<T> extends IHandler<T, Boolean> {
 

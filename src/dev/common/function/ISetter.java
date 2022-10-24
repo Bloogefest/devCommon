@@ -7,6 +7,7 @@ package dev.common.function;
  * @apiNote The setter of the value
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface ISetter<T> {
 

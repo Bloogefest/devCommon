@@ -8,6 +8,7 @@ package dev.common.function;
  * @apiNote The provider of the target value
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IProvider<T, S> {
 

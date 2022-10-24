@@ -8,6 +8,7 @@ package dev.common.function;
  * @apiNote The handler of the value
  * @since 1.0.0
  */
+@Deprecated
 @FunctionalInterface
 public interface IHandler<T, R> {
 

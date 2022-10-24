@@ -6,6 +6,7 @@ package dev.common.function;
  * @apiNote Not specified
  * @since 1.0.6
  */
+@Deprecated
 public interface IAccessor<T> extends IGetter<T>, ISetter<T> {
 
     /**
