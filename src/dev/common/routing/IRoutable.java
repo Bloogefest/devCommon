@@ -6,6 +6,7 @@ package dev.common.routing;
  * @apiNote Not specified
  * @since 1.0.6
  */
+@Deprecated
 public interface IRoutable {
 
     /**

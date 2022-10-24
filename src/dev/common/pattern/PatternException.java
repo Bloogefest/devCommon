@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.1.3
  */
+@Deprecated
 public class PatternException extends SoftException {
 
     public PatternException() {

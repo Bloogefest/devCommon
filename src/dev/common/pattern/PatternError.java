@@ -8,6 +8,7 @@ import dev.common.exception.SoftError;
  * @apiNote Not specified
  * @since 1.1.3
  */
+@Deprecated
 public class PatternError extends SoftError {
 
     public PatternError() {

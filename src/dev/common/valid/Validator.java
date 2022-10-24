@@ -9,6 +9,7 @@ import dev.common.base.OldObjects;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public final class Validator {
 
     /**

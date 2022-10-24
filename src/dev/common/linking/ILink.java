@@ -8,6 +8,7 @@ import dev.common.function.IGetter;
  * @apiNote Not specified
  * @since 1.1.0
  */
+@Deprecated
 public interface ILink<T> extends IGetter<T> {
 
     /**

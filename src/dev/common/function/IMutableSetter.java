@@ -9,6 +9,7 @@ import dev.common.base.MutateException;
  * @apiNote Not specified
  * @since 1.0.9
  */
+@Deprecated
 public interface IMutableSetter<T> extends ISetter<T>, IMutable {
 
     /**

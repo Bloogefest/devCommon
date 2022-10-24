@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class CloseException extends SoftException {
 
     public CloseException() {

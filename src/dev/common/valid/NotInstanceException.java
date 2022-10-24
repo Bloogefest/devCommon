@@ -6,6 +6,7 @@ package dev.common.valid;
  * @apiNote Not specified
  * @since 1.0.2
  */
+@Deprecated
 public class NotInstanceException extends ValidationException {
 
     public NotInstanceException() {

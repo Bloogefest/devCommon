@@ -6,6 +6,7 @@ package dev.common.base;
  * @apiNote Not specified
  * @since 1.1.1
  */
+@Deprecated
 public class DefaultMutable implements IMutable {
 
     private final boolean mutable;

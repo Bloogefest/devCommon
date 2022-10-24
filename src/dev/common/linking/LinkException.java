@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.1.0
  */
+@Deprecated
 public class LinkException extends SoftException {
 
     public LinkException() {

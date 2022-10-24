@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class CloneException extends SoftException {
 
     public CloneException() {

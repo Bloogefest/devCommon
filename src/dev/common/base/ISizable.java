@@ -6,6 +6,7 @@ package dev.common.base;
  * @apiNote Not specified
  * @since 1.0.7
  */
+@Deprecated
 public interface ISizable {
 
     /**

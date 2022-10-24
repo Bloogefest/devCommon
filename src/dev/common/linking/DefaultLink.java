@@ -8,6 +8,7 @@ import dev.common.base.OldObjects;
  * @apiNote Not specified
  * @since 1.1.1
  */
+@Deprecated
 public class DefaultLink<T> implements ILink<T> {
 
     private final T value;

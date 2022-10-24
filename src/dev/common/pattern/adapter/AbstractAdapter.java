@@ -8,6 +8,7 @@ package dev.common.pattern.adapter;
  * @apiNote Not specified
  * @since 1.1.3
  */
+@Deprecated
 public abstract class AbstractAdapter<ADAPTABLE> {
 
     /**

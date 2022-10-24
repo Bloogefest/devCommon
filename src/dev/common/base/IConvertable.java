@@ -7,6 +7,7 @@ package dev.common.base;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public interface IConvertable<T> {
 
     /**

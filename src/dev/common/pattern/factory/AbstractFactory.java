@@ -8,6 +8,7 @@ package dev.common.pattern.factory;
  * @apiNote Not specified
  * @since 1.1.3
  */
+@Deprecated
 public abstract class AbstractFactory<PRODUCT> {
 
     /**

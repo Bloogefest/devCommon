@@ -10,6 +10,7 @@ import dev.common.base.OldObjects;
  * @apiNote Not specified
  * @since 1.1.2
  */
+@Deprecated
 public class DefaultMutableLink<T> extends DefaultMutable implements IMutableLink<T> {
 
     protected T value;

@@ -9,6 +9,7 @@ import dev.common.function.IMutableAccessor;
  * @apiNote Not specified
  * @since 1.1.0
  */
+@Deprecated
 public interface IMutableLink<T> extends ILink<T>, IMutableAccessor<T> {
 
     /**

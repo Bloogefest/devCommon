@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.0.6
  */
+@Deprecated
 public class RouteException extends SoftException {
 
     public RouteException() {

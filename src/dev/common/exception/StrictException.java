@@ -6,6 +6,7 @@ package dev.common.exception;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class StrictException extends Exception {
 
     public StrictException() {

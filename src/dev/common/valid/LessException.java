@@ -6,6 +6,7 @@ package dev.common.valid;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class LessException extends ValidationException {
 
     public LessException() {

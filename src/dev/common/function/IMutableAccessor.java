@@ -8,6 +8,7 @@ import dev.common.base.MutateException;
  * @apiNote Not specified
  * @since 1.0.9
  */
+@Deprecated
 public interface IMutableAccessor<T> extends IAccessor<T>, IMutableSetter<T> {
 
     /**

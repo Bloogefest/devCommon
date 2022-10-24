@@ -8,6 +8,7 @@ import dev.common.exception.SoftError;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class ToFixError extends SoftError {
 
     public ToFixError() {

@@ -8,6 +8,7 @@ import dev.common.exception.StrictException;
  * @apiNote Not specified
  * @since 1.0.0
  */
+@Deprecated
 public class ProvideException extends StrictException {
 
     public ProvideException() {

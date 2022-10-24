@@ -8,6 +8,7 @@ import dev.common.pattern.PatternException;
  * @apiNote Not specified
  * @since 1.1.3
  */
+@Deprecated
 public class BuilderException extends PatternException {
 
     public BuilderException() {

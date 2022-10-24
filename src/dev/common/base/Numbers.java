@@ -6,6 +6,7 @@ package dev.common.base;
  * @apiNote Not specified
  * @since 1.1.2
  */
+@Deprecated
 public final class Numbers {
 
     /**

@@ -8,6 +8,7 @@ import dev.common.exception.SoftException;
  * @apiNote Not specified
  * @since 1.0.8
  */
+@Deprecated
 public class MutateException extends SoftException {
 
     public MutateException() {
