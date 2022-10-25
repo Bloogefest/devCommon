@@ -1,5 +1,5 @@
 /**
- * @apiNote The family of functional interfaces
+ * @apiNote Not specified
  * @since 1.0.0
  */
 package dev.common.function;

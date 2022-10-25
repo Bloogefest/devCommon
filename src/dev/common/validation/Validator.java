@@ -1,8 +1,8 @@
 package dev.common.validation;
 
+import dev.common.function.IGetter;
 import dev.common.general.Numbers;
 import dev.common.throwable.SoftException;
-import dev.common.function.ISupplier;
 import dev.common.general.Objects;
 import dev.common.security.SecurityException;
 import org.jetbrains.annotations.Contract;
@@ -68,9 +68,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("!null, _ -> param1; null, _ -> fail")
-    public static <OBJECT, THROWABLE extends SoftException> @NotNull OBJECT notNull(final OBJECT object, final ISupplier<THROWABLE> supplier) throws THROWABLE {
+    public static <OBJECT, THROWABLE extends SoftException> @NotNull OBJECT notNull(final OBJECT object, final IGetter<THROWABLE> supplier) throws THROWABLE {
         if (object != null) return object;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -227,9 +227,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, _, !null -> param1; _, _, null -> fail")
-    public static <OBJECT, THROWABLE extends SoftException> OBJECT equals(final OBJECT object, final OBJECT object_, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <OBJECT, THROWABLE extends SoftException> OBJECT equals(final OBJECT object, final OBJECT object_, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.equals(object, object_)) return object;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -386,9 +386,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, _, !null -> param1; _, _, null -> fail")
-    public static <OBJECT, THROWABLE extends SoftException> OBJECT notEquals(final OBJECT object, final OBJECT object_, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <OBJECT, THROWABLE extends SoftException> OBJECT notEquals(final OBJECT object, final OBJECT object_, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.notEquals(object, object_)) return object;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -440,9 +440,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, !null, !null -> param1; _, null, null -> fail")
-    public static <OBJECT, THROWABLE extends SoftException> OBJECT instance(final OBJECT object, final Class<?> type, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <OBJECT, THROWABLE extends SoftException> OBJECT instance(final OBJECT object, final Class<?> type, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.instance(object, type)) return object;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -494,9 +494,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, !null, !null -> param1; _, null, null -> fail")
-    public static <OBJECT, THROWABLE extends SoftException> OBJECT notInstance(final OBJECT object, final Class<?> type, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <OBJECT, THROWABLE extends SoftException> OBJECT notInstance(final OBJECT object, final Class<?> type, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.notInstance(object, type)) return object;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -548,9 +548,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, !null, !null -> param1; _, null, null -> fail")
-    public static <TYPE, THROWABLE extends SoftException> Class<TYPE> assignable(final Class<TYPE> type, final Class<?> type_, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <TYPE, THROWABLE extends SoftException> Class<TYPE> assignable(final Class<TYPE> type, final Class<?> type_, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.assignable(type, type_)) return type;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
     /**
@@ -602,9 +602,9 @@ public final class Validator {
      * @since 1.1.3
      */
     @Contract("_, !null, !null -> param1; _, null, null -> fail")
-    public static <TYPE, THROWABLE extends SoftException> Class<TYPE> notAssignable(final Class<TYPE> type, final Class<?> type_, final ISupplier<THROWABLE> supplier) throws NullException, THROWABLE {
+    public static <TYPE, THROWABLE extends SoftException> Class<TYPE> notAssignable(final Class<TYPE> type, final Class<?> type_, final IGetter<THROWABLE> supplier) throws NullException, THROWABLE {
         if (Objects.notAssignable(type, type_)) return type;
-        throw notNull(notNull(supplier, "supplier").supply(), "throwable");
+        throw notNull(notNull(supplier, "supplier").get(), "throwable");
     }
 
 }
