@@ -4,8 +4,9 @@
  */
 module devCommon {
     requires org.jetbrains.annotations;
-    exports dev.common.base;
-    exports dev.common.exception;
     exports dev.common.function;
-    exports dev.common.valid;
+    exports dev.common.general;
+    exports dev.common.security;
+    exports dev.common.throwable;
+    exports dev.common.validation;
 }

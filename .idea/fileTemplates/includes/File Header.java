@@ -1,6 +1,6 @@
 /**
 * @apiNote Not specified
 * @author Bloogefest
-* @since 1.1.3
+* @since 1.1.4
 * @version 1.0
 */
