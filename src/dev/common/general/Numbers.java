@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Contract;
 public final class Numbers {
 
     /**
-     * @throws SecurityException The exception
+     * @throws SecurityException Not specified
      * @author Bloogefest
      * @apiNote Not specified
      * @since 1.1.3
